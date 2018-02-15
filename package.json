@@ -1,22 +1,30 @@
 {
-	"description": "NativeScript Application",
-	"license": "SEE LICENSE IN <your-license-filename>",
-	"readme": "NativeScript Application",
-	"repository": "<fill-your-repository-here>",
-	"nativescript": {
-		"id": "org.nativescript.salonsindustriels"
-	},
-	"dependencies": {
-		"nativescript-theme-core": "~1.0.4",
-		"nativescript-vue": "^0.1.1",
-		"tns-core-modules": "^3.0.0",
-		"vue-router": "^2.4.0"
-	},
-	"devDependencies": {
-		"babel-traverse": "6.24.1",
-		"babel-types": "6.24.1",
-		"babylon": "6.16.1",
-		"lazy": "1.0.11",
-		"nativescript-dev-android-snapshot": "^0.*.*"
-	}
+  "description": "Mobile application for scanning badges at the various Salons Industriels.",
+  "license": "SEE LICENSE IN <your-license-filename>",
+  "readme": "NativeScript Application",
+  "repository": "<fill-your-repository-here>",
+  "nativescript": {
+    "id": "ca.lewebsimple.salonsindustriels",
+    "tns-android": {
+      "version": "3.4.1"
+    }
+  },
+  "scripts": {
+    "run-android": "tns run android"
+  },
+  "dependencies": {
+    "nativescript-barcodescanner": "2.7.5",
+    "nativescript-theme-core": "~1.0.4",
+    "nativescript-vue": "^0.1.1",
+    "tns-core-modules": "^3.0.0",
+    "vue-router": "^2.4.0"
+  },
+  "devDependencies": {
+    "babel-traverse": "6.24.1",
+    "babel-types": "6.24.1",
+    "babylon": "6.16.1",
+    "lazy": "1.0.11",
+    "nativescript-dev-android-snapshot": "^0.*.*"
+  },
+  "author": "Le Web simple <tech@lewebsimple.ca>"
 }
