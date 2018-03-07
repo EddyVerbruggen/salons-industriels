@@ -1,13 +1,8 @@
-npm-debug.log
-.DS_Store
-
-*.js.map
-vendor*.ts
-hooks/
-lib/
-node_modules/
-platforms/
-tmp/
-typings/
+# JetBrains project files
 .idea
-/.project
+
+# NPM
+node_modules
+
+# NativeScript application
+/dist
