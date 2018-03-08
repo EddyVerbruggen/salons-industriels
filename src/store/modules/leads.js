@@ -2,9 +2,24 @@ const state = {
   items: [],
 };
 
-const mutations = {};
+const mutations = {
+  addLead (state, lead) {
+    state.items.push(lead);
+  },
+  removeLead (state, id) {
+    let index = state.items.findIndex(lead => lead.id === id);
+    state.items.splice(index, 1);
+  },
+};
 
-const actions = {};
+const actions = {
+  addLead ({commit}, lead) {
+    commit('addLead', lead);
+  },
+  removeLead ({commit}, id) {
+    commit('removeLead', id);
+  },
+};
 
 export default {
   state,

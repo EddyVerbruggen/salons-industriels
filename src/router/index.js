@@ -3,22 +3,27 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
-import Home from '../pages/Home';
+import Leads from '../pages/Leads';
+import Lead from '../pages/Lead';
 
 const router = new VueRouter({
   pageRouting: true,
   routes: [
     {
-      path: '/home',
-      component: Home,
+      path: '/leads',
+      component: Leads,
       meta: {
-        title: 'Salons Industriels',
+        title: 'Leads',
       },
     },
-    {path: '*', redirect: '/home'},
+    {
+      path: '/lead/:id',
+      component: Lead,
+    },
+    {path: '*', redirect: '/leads'},
   ],
 });
 
-router.replace('/home');
+router.replace('/leads');
 
 module.exports = router;
