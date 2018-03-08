@@ -3,7 +3,7 @@ import VueRouter from 'vue-router';
 
 Vue.use(VueRouter);
 
-import Home from '../components/Home';
+import Home from '../pages/Home';
 
 const router = new VueRouter({
   pageRouting: true,
@@ -12,7 +12,7 @@ const router = new VueRouter({
       path: '/home',
       component: Home,
       meta: {
-        title: 'Home',
+        title: 'Salons Industriels',
       },
     },
     {path: '*', redirect: '/home'},
