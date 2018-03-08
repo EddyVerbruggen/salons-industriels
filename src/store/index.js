@@ -1,12 +1,16 @@
 import Vue from 'nativescript-vue';
 import Vuex from 'vuex';
 
+import leads from './modules/leads';
+
 Vue.use(Vuex);
 
 const debug = process.env.NODE_ENV !== 'production';
 
 const store = new Vuex.Store({
-  modules: {},
+  modules: {
+    leads,
+  },
   strict: debug,
 });
 
